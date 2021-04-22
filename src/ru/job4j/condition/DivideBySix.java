@@ -4,7 +4,7 @@ public class DivideBySix {
     public static String checkNumber(int number) {
         int divider = 3;
         String result;
-        if (LogicNot.isEven(number)) {
+        if (number % 2 == 0) {
             if (number % divider == 0) {
                 result = "Исходное число делится на 6.";
             } else {
