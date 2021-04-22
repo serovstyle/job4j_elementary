@@ -12,7 +12,8 @@ public class ChessBoard {
 
     public static int way(int x1, int y1, int x2, int y2) {
         int result = 0;
-        if (ChessBoard.isLegal(x1) && ChessBoard.isLegal(x2) && ChessBoard.isLegal(y1) && ChessBoard.isLegal(y2) && ChessBoard.isBishop(x1, y1, x2, y2)) {
+        if (ChessBoard.isLegal(x1) && ChessBoard.isLegal(x2) && ChessBoard.isLegal(y1) && ChessBoard.isLegal(y2)
+                && ChessBoard.isBishop(x1, y1, x2, y2)) {
             result = Math.abs(x2 - x1);
         }
         return result;
